@@ -3,7 +3,8 @@ body {
 }
 
 .container {
-    width: 1470px;
+    width: 100%;
+    max-width: 1440px;
     height: 970px;
     border: 25px solid #2b81ac;
     box-sizing: border-box;
@@ -12,16 +13,10 @@ body {
 }
 
 .container__title {
-    font-size: 50px;
+    font-size: 35px;
     color: white;
-    display: inline-block;
-    margin: 36px 0 15px 215px ;
-}
-
-.container__content {
-    width: 985px;
-    height: 622px;
-    margin: 0 auto;
+    margin: 36px 0 15px 215px;
+    font-weight: normal;
 }
 
 p{
@@ -37,11 +32,21 @@ tr, td {
     color: white;
 }
 
+.container__content {
+     height: 622px;
+     margin: 0 218px;
+ }
+
+ul, li {
+    border-color: white;
+    border-style: solid;
+}
+
 .weather__list {
     font-size: 0;
-    padding: 0;
+    padding-left: 0;
     height: 100%;
-    border: 6px solid #ffffff;
+    border-width: 3px;
 }
 
 .weather__list-title {
@@ -49,12 +54,13 @@ tr, td {
     font-size: 25px;
     list-style: none;
     display: inline-block;
-    border: solid #ffffff;
+    max-width: 100%;
+    border-width: 3px;
     text-align: center;
     box-sizing: border-box;
     height: 25%;
     font-weight: bold;
-    padding:  40px 0;
+    padding: 40px 0;
 }
 
 /* Для того, чтобы выбраный объъект оставался непрозрачным*/
@@ -63,8 +69,8 @@ tr, td {
     opacity: .3;
 }
 
-.weather__list{
-    transition: 0.5s;
+.weather__list {
+    transition: 0.5s easy-in;
 }
 
 .weather__list-title > span {
@@ -76,60 +82,57 @@ tr, td {
 
 .weather__list-title_25 {
     width: 25%;
-
 }
 
 .weather__list-title_50 {
     width: 50%;
-
 }
 
 .weather__list-title_100 {
     width: 100%;
-
 }
 
 .weather__list-title_bg-blue {
     background-color: #3399cc;
 }
 
-.weather__list-title_bg-Turquoise {
+.weather__list-title_bg-turquoise {
     background-color: #33cccc;
 }
 
-.weather__list-title_bg-Strikemaster {
+.weather__list-title_bg-strikemaster {
     background-color: #996699;
 }
 
-.weather__list-title_bg-Crail {
+.weather__list-title_bg-crail {
     background-color: #c24747;
 }
 
-.weather__list-title_bg-Terracotta {
+.weather__list-title_bg-terracotta {
     background-color: #e2674a;
 }
 
-.weather__list-title_bg-Golden_Tainoi {
+.weather__list-title_bg-golden_tainoi {
     background-color: #ffcc66;
 }
 
-.weather__list-title_bg-De_York {
+.weather__list-title_bg-de_york {
     background-color: #99cc99;
 }
 
-.weather__list-title_bg-Patina {
+.weather__list-title_bg-patina {
     background-color: #669999;
 }
 
-.weather__list-title_bg-Hopbush {
+.weather__list-title_bg-hopbush {
     background-color: #cc6699;
 }
 
-.weather__list-title_bg-Sea_Green {
+.weather__list-title_bg-sea_green {
     background-color: #339966;
 }
 
-.weather__list-title_bg-Kimberly {
+.weather__list-title_bg-kimberly {
     background-color: #666699;
 }
 
